@@ -1,8 +1,8 @@
 body {
   box-sizing: border-box;
   font-family: "Roboto", sans-serif;
-  font-size: 14px;
-  letter-spacing: 0.03em;
+  font-size: var(--default-font-size);
+  letter-spacing: var(--default-letter-spacing);
   color: var(--color-almost-black);
   background-color: var(--color-white);
 }

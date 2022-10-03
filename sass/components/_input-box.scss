@@ -91,7 +91,7 @@
   }
 
   &__policy-text {
-    font-size: 14px;
+    font-size: var(--default-font-size);
     line-height: calc(24 / 14);
 
     color: var(--color-grey);
@@ -99,7 +99,7 @@
 
   &__policy-link {
     color: var(--color-blue);
-    font-size: 14px;
+    font-size: var(--default-font-size);
     line-height: calc(24 / 14);
   }
   &__input:focus {

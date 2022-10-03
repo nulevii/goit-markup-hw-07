@@ -13,6 +13,8 @@
   --color-black: #000000;
   --color-border-one: #ececec;
   --color-border-two: #eeeeee;
+  --default-font-size: 14px;
+  --default-letter-spacing: var(--default-letter-spacing);
   --default-animation: cubic-bezier(0.4, 0, 0.2, 1);
   --default-animation-duration: 250ms;
 }
@@ -54,8 +56,8 @@ body {
   -webkit-box-sizing: border-box;
           box-sizing: border-box;
   font-family: "Roboto", sans-serif;
-  font-size: 14px;
-  letter-spacing: 0.03em;
+  font-size: var(--default-font-size);
+  letter-spacing: var(--default-letter-spacing);
   color: var(--color-almost-black);
   background-color: var(--color-white);
 }
@@ -406,13 +408,13 @@ body {
   border-color: var(--color-blue);
 }
 .input-box__policy-text {
-  font-size: 14px;
+  font-size: var(--default-font-size);
   line-height: 1.7142857143;
   color: var(--color-grey);
 }
 .input-box__policy-link {
   color: var(--color-blue);
-  font-size: 14px;
+  font-size: var(--default-font-size);
   line-height: 1.7142857143;
 }
 .input-box__input:focus {
@@ -447,7 +449,7 @@ body {
   border-radius: 4px;
 }
 .fiture-element__caption {
-  font-size: 14px;
+  font-size: var(--default-font-size);
   line-height: 1.143;
   text-transform: uppercase;
 }

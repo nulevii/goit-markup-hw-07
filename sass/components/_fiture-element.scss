@@ -13,7 +13,7 @@
   }
 
   &__caption {
-    font-size: 14px;
+    font-size: var(--default-font-size);
     line-height: 1.143;
     text-transform: uppercase;
   }
