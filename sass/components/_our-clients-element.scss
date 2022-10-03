@@ -1,0 +1,30 @@
+.our-clients-element {
+  width: 170px;
+  height: 92px;
+
+  &__link {
+    width: 170px;
+    height: 92px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: var(--color-light-grey);
+    border: 1px solid var(--color-light-grey);
+    border-radius: 4px;
+
+    transition: color, border;
+    transition-duration: var(--default-animation-duration);
+    transition-timing-function: var(--default-animation);
+  }
+
+  &__link:hover,
+  &__link:focus {
+    color: var(--color-blue);
+    border-color: var(--color-blue);
+  }
+
+  &__image {
+    display: block;
+    fill: currentColor;
+  }
+}

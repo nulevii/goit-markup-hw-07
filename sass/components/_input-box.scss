@@ -1,0 +1,108 @@
+.input-box {
+  position: relative;
+  display: block;
+  margin-bottom: 10px;
+
+  &__image {
+    position: absolute;
+    top: 50%;
+    left: 12px;
+    fill: var(--color-almost-black);
+
+    transition: fill;
+    transition-duration: var(--default-animation-duration);
+    transition-timing-function: var(--default-animation);
+  }
+  &__input:focus + &__image {
+    fill: var(--color-blue);
+  }
+
+  &__input {
+    padding-left: 42px;
+    width: 100%;
+    height: 40px;
+
+    outline: none;
+    border: 1px solid rgba(33, 33, 33, 0.2);
+    border-radius: 4px;
+
+    transition: border;
+    transition-duration: var(--default-animation-duration);
+    transition-timing-function: var(--default-animation);
+  }
+
+  &__description {
+    margin-bottom: 4px;
+    display: block;
+    font-weight: 400;
+    font-size: 12px;
+    line-height: calc(14 / 12);
+    letter-spacing: 0.01em;
+
+    color: #757575;
+  }
+
+  &--bigger-margin {
+    margin-bottom: 25px;
+  }
+  &__input--textarea {
+    height: 120px;
+    padding: 12px 16px;
+
+    resize: none;
+  }
+
+  &--policy {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 30px;
+    user-select: none;
+  }
+
+  &__checkbox-image {
+    fill: var(--color-white);
+    border: 2px solid var(--color-almost-black);
+    border-radius: 2px;
+    margin-right: 7px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    cursor: pointer;
+
+    transition: background-color, border-color, fill;
+    transition-duration: var(--default-animation-duration);
+    transition-timing-function: var(--default-animation);
+  }
+
+  &__checkbox {
+    position: absolute;
+    visibility: hidden;
+    width: 0px;
+    height: 0px;
+    pointer-events: none;
+  }
+
+  &__checkbox:checked + &__checkbox-image {
+    fill: var(--color-blue);
+    background-color: var(--color-blue);
+    border-color: var(--color-blue);
+  }
+
+  &__policy-text {
+    font-size: 14px;
+    line-height: calc(24 / 14);
+
+    color: var(--color-grey);
+  }
+
+  &__policy-link {
+    color: var(--color-blue);
+    font-size: 14px;
+    line-height: calc(24 / 14);
+  }
+  &__input:focus {
+    border-color: var(--color-blue);
+  }
+}

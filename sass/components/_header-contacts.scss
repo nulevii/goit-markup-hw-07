@@ -1,0 +1,36 @@
+.header-contacts {
+  display: flex;
+  margin-left: auto;
+  gap: 50px;
+
+  &__element {
+    display: flex;
+    align-items: center;
+
+    height: 16px;
+    padding: 32px 0;
+
+    font-weight: 500;
+    line-height: 1.143;
+    letter-spacing: 0.02em;
+    text-decoration: none;
+
+    color: var(--color-grey);
+
+    transition: color;
+    transition-duration: var(--default-animation-duration);
+    transition-timing-function: var(--default-animation);
+  }
+
+  &__element:hover,
+  &__element:focus {
+    color: var(--color-blue);
+  }
+
+  &__icon,
+  &__icon {
+    fill: currentColor;
+    margin-right: 10px;
+    line-height: 14px;
+  }
+}

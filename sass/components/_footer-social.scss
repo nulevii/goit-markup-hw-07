@@ -1,0 +1,10 @@
+.footer-social {
+  margin-left: 70px;
+
+  &__caption {
+    font-weight: 700;
+    line-height: 1.14;
+    text-transform: uppercase;
+    color: var(--color-white);
+  }
+}

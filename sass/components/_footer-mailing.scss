@@ -1,0 +1,39 @@
+.footer-mailing {
+  margin-left: auto;
+
+  &__caption {
+    font-weight: 700;
+    line-height: 1.14;
+    text-transform: uppercase;
+    color: var(--color-white);
+  }
+  &__caption {
+    margin-bottom: 20px;
+  }
+  &__form {
+    display: flex;
+  }
+  &__email {
+    width: 358px;
+    height: 50px;
+    padding-left: 16px;
+    background-color: transparent;
+    border: 1px solid rgba(255, 255, 255, 0.3);
+    filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.15));
+    color: var(--color-white);
+    border-radius: 4px;
+
+    transition: border;
+    transition-duration: var(--default-animation-duration);
+    transition-timing-function: var(--default-animation);
+  }
+  &__submit-button {
+    margin-left: 12px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  &__email:focus {
+    border-color: var(--color-blue);
+  }
+}

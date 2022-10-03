@@ -1,0 +1,20 @@
+.person-info {
+  padding: 30px 32px;
+
+  &__caption {
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 1.188;
+
+    margin-bottom: 10px;
+
+    text-align: center;
+  }
+
+  &__description {
+    font-size: 16px;
+    line-height: 1.188;
+    text-align: center;
+    color: var(--color-grey);
+  }
+}

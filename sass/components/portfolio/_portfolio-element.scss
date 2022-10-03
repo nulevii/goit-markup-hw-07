@@ -1,0 +1,29 @@
+.portfolio-element {
+  width: 370px;
+  box-sizing: border-box;
+
+  &__link {
+    display: block;
+    color: var(--color-almost-black);
+    text-decoration: none;
+
+    transition: box-shadow;
+    transition-duration: var(--default-animation-duration);
+    transition-timing-function: var(--default-animation);
+  }
+
+  &__image {
+    display: block;
+  }
+
+  &__link:hover,
+  &__link:focus {
+    box-shadow: 0px 1px 1px rgba(0, 0, 0, 0.12), 0px 4px 4px rgba(0, 0, 0, 0.06),
+      1px 4px 6px rgba(0, 0, 0, 0.16);
+  }
+
+  &__link:hover .animation-container__element,
+  &__link:focus .animation-container__element {
+    transform: translateY(-100%);
+  }
+}

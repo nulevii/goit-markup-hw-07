@@ -1,0 +1,72 @@
+.modal-window-container {
+  width: 100vw;
+  height: 100vh;
+  position: fixed;
+  top: 0;
+  left: 0;
+  background-color: #00000033;
+  transition-property: opacity;
+  transition-duration: var(--default-animation-duration);
+  transition-timing-function: var(--default-animation);
+  opacity: 1;
+  z-index: 1;
+  display: block;
+
+  &.is-hidden {
+    opacity: 0;
+    pointer-events: none;
+  }
+
+  &.display-none {
+    display: none;
+  }
+
+  &.is-hidden .modal-window {
+    transform: translate(-50%, -50%) scale(1.1);
+  }
+}
+
+.modal-window {
+  position: fixed;
+  width: 528px;
+  height: 581px;
+  top: 50%;
+  left: 50%;
+  border-radius: 4px;
+
+  background-color: var(--color-white);
+  box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14),
+    0px 2px 1px rgba(0, 0, 0, 0.2);
+
+  transform: translate(-50%, -50%) scale(1);
+  transition: transform;
+  transition-duration: var(--default-animation-duration);
+  transition-timing-function: var(--default-animation);
+
+  &__close-button {
+    position: absolute;
+    top: 8px;
+    right: 8px;
+
+    display: flex;
+    width: 30px;
+    height: 30px;
+    align-items: center;
+    justify-content: center;
+    border-radius: 50%;
+
+    background-color: var(--color-white);
+    border: 1px solid rgba(0, 0, 0, 0.1);
+
+    cursor: pointer;
+
+    transition: fill;
+    transition-duration: var(--default-animation-duration);
+    transition-timing-function: var(--default-animation);
+  }
+
+  &__close-button:hover,
+  &__close-button:focus {
+    fill: var(--color-blue);
+  }
+}

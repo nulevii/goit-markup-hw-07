@@ -1,0 +1,50 @@
+//utils
+@import "./utils/vars.scss";
+@import "./utils/animation-container";
+
+//base
+@import "./base/reset";
+@import "./base/common";
+@import "./base/buttons";
+@import "./base/section-caption";
+@import "./base/social-media";
+
+//components
+@import "./components/logo";
+@import "./components/navigation-list";
+@import "./components/header-contacts";
+
+@import "./components/order-section";
+@import "./components/modal-form";
+@import "./components/input-box";
+
+@import "./components/fiture-list";
+@import "./components/fiture-element";
+
+@import "./components/about-us-section";
+@import "./components/about-us-list";
+
+@import "./components/our-team-section";
+@import "./components/.our-team-list";
+@import "./components/person-info";
+
+@import "./components/our-clients-element";
+@import "./components/our-clients-list";
+
+@import "./components/footer-contacts";
+@import "./components/adress-info";
+@import "./components/footer-social";
+@import "./components/footer-mailing";
+
+////portfolio
+@import "./components/portfolio/filter-list";
+@import "./components/portfolio/portfolio-list";
+@import "./components/portfolio/portfolio-element";
+@import "./components/portfolio/element-desription";
+
+//layouts
+@import "./layouts/page-header";
+@import "./layouts/navigation";
+@import "./layouts/page-main";
+@import "./layouts/modal-window";
+@import "./layouts/page-footer";
